@@ -6,14 +6,33 @@
     body{
         font:bold 18pt calibri; 
     }
-    function initialize{
+ </style>
+ <script src = "utilities.js"></script>
+<script>
+       function initialize() {
         arrayOutput = document.getElementById("divout");
 
-        theList = ["lst"]
+        randomList = [];
+        var randomLength = getRandomInteger(50,100);
+        for (var i = 0; i < randomLength; i++)
+        {
+            randomList[randomList.length] = getRandomInteger(-10, 10);
+        }
+        displayList();
     }
-</style>
+    function displayList()
+    {
+        arrayOutput.innerHTML = "";
+        for (var i = 0; i < randomList.length; i++)
+        {
+            arrayOutput.innerHTML += i + ":"+ randomList[i] + "<br />"; 
+        }
+    }
+
+</script>
 </head>
 <body onload = "intialize();">
     <div id = "divout"></div>
 </body>
 </html>
+<script></script>
