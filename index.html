@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 4 Classwork</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="utils.js"></script>
+</head>
+<body onload="init();">
+    <h2>Daily Log</h2>
+    <form action="" id="logform">
+        <textarea name="loginput"cols="30" rows="10"></textarea>
+    </form>
+
+    <button onclick="addMessage(logFormObject.loginput.value);">Add To Log</button>
+
+    <hr />
+
+    <div id="logoutput">Log --</div>
+
+    <div id="divout">
+
+    </div>
+
+    <hr />
+
+    <h1>Food List</h1>
+
+    <label for="">Selection: <input type="text" id="foodsell"></label>
+
+    <hr />
+
+    <button onclick="addFood();">Add Food</button>
+    <button onclick="getDupeList();">Find Duplicates</button>
+    <button onclick="getDupeCount();">Count Duplicates</button>
+    <div>Duplicate Indices: <span id="dupes"></span></div>
+    <div>Count of Duplicates: <span id="count"></span></div>
+    <hr />
+    <div><div id="outbox"></div></div>
+
+
+    <h1><span>Alchemy</span></h1>
+    <div class="box">
+        <h2>My Organisms</h2>
+        <div id="orgs"></div>
+        <hr />
+        <form action="" id="orgsForm"><input type="number" id=""orgse1></form>
+        <button onclick="selectOrganism();">Select Organism</button>
+        <button onclick="deleteOrganism();">Delete Organism</button>
+    </div>
+
+    <hr />
+
+    <p><span id="1st"></span> AND <span id="2nd"></span></p>
+</body>
+</html>
